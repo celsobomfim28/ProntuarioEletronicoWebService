@@ -23,7 +23,11 @@ public class ProfissionalService {
         return repository.findAll();
     }
 
-    public Profissionais_de_saude update(Profissionais_de_saude profissional){
+    public Profissionais_de_saude findById(String id){
+        return (Profissionais_de_saude) repository.getReferenceById(id);
+    }
+
+    public Profissionais_de_saude update(Profissionais_de_saude profissional, String id){
         return repository.save(profissional);
     }
 

@@ -26,16 +26,17 @@ public class Usuario implements UserDetails, Serializable {
     private String id;
     @NotEmpty
     private String nome;
-    private String telefone;
     private String cns;
+    private String email;
+    @NonNull
+    private LocalDate data_nascimento;
+    private String telefone;
     @NotEmpty
     private String cpf;
     private LocalDate createAt;
     private String rg;
     private char sexo;
     private boolean ativo = true;
-    @NonNull
-    private LocalDate data_nascimento;
     @NotEmpty
     private String senha;
     @NonNull

@@ -20,4 +20,5 @@ public class Profissionais_de_saude extends Usuario implements Serializable {
     private String id;
     private String conselho;
     private String area;
+    private String tipo;
 }

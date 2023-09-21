@@ -17,10 +17,11 @@ public class Endereco implements Serializable {
     @Id()
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
-    private String tipo;
-    private String nome_do_logradouro;
+    private String endereco;
     private int numero;
     private String cep;
     private String bairro;
+    private String cidade;
+    private String estado;
     private String complemento;
 }
